@@ -18,6 +18,12 @@ COPY requirements.txt ./
 RUN python -m pip install -r requirements.txt -t /opt/awscli
 
 #
+# Add the LICENSE file
+#
+
+COPY LICENSE /opt/awscli/LICENSE
+
+#
 # organize for self-contained usage
 #
 
